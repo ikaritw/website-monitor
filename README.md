@@ -1,30 +1,32 @@
-## Website Monitor for Google Docs
+## 網站監控器 for Google Docs
 
-Setting up website uptime monitor inside Google Sheets is quick and easy.
+_forked from https://github.com/labnol/website-monitor_
+
+在 Google Sheets 中設置網站運行監控器非常容易。
 
 ![Website Uptime Monitor](https://www.labnol.org/media/website-monitor.png)
 
-## Getting Started 🏃🏼
+## 入門開始 🏃🏼
 
-1\. Copy the [Google Sheet](http://bit.ly/Website-Monitor) to your Google Drive. If you using GSuite, please ensure that the Gmail service is enabled for your domain.
+1\. 將 [Google Sheet](http://bit.ly/Website-Monitor) 複製到您的Google雲端硬盤。 如果您使用GSuite，請確保為您的域啟用了Gmail服務。
 
-2\. Go to Website Monitor > Configure and specify the website URL and email address to notify when the website is down or becomes inaccessible.
+2\. 在Google Sheets當中的選單裡點擊 *網站監視器* >配置並指定網站URL和電子郵件地址，以通知網站何時關閉或無法訪問。
 
-3\. Click Save to start monitoring the uptime and downtime of the website. The email alerts are sent via the Gmail API.
+3\. 點擊保存開始監視網站的正常運行時間和停機時間。 電子郵件警報是通過Gmail API發送的。
 
-4\. (Optional) The Google Script can log the downtime in your Google Analytics.
+4\. (可選) Google腳本可以在您的 Google Analytics 中記錄停機時間。
 
-## Developing with Google Apps Script 🚀
+## 使用 Google Apps腳本 進行開發 🚀
 
-Website Monitor is written in JavaScript (ES6) and compiled to Google Apps Script with Babel and Webpack using the [Apps Script starter kit](https://github.com/labnol/apps-script-starter).
+*網站監視器* 是用JavaScript（ES6）編寫的，並使用 [Apps Script入門工具包](https://github.com/labnol/apps-script-starter) 與Babel和Webpack一起編譯為Google Apps腳本。
 
-The starter kit is used for building popular Google add-ons include [Gmail Mail Merge](https://chrome.google.com/webstore/detail/mail-merge-with-attachmen/nifmcbjailaccmombpjjpijjbfoicppp), [Google Forms Notifications](https://chrome.google.com/webstore/detail/email-notifications-for-f/acknfdkglemcidajjmehljifccmflhkm) and [Document Studio](https://chrome.google.com/webstore/detail/document-studio/nhgeilcelhkmajkfgmgldbinmgjjajlb).
+該入門工具包用於構建流行的Google插件，包括 [Gmail郵件合併](https://chrome.google.com/webstore/detail/mail-merge-with-attachmen/nifmcbjailaccmombpjjpijjbfoicppp), [Google Forms 通知](https://chrome.google.com/webstore/detail/email-notifications-for-f/acknfdkglemcidajjmehljifccmflhkm) 和 [Document Studio](https://chrome.google.com/webstore/detail/document-studio/nhgeilcelhkmajkfgmgldbinmgjjajlb).
 
-## Meet the Developer 👨🏼‍💻
+## 認識開發者 👨🏼‍💻
 
-[Amit Agarwal](https://digitalinspiration.com/google-developer) is a web geek and author of [labnol.org](https://www.labnol.org/), a popular tech how-to website. He frequently uses [Google Apps Script](https://ctrlq.org/) to automate workflows enhance productivity. 
+[Amit Agarwal](https://digitalinspiration.com/google-developer) 是一位網絡怪胎，同時也是著名的技術指南網站[labnol.org](https://www.labnol.org/)的作者。 他經常使用[Google Apps腳本](https://ctrlq.org/)來自動化工作流程，從而提高工作效率。
 
-Reach him on [Twitter](https://twitter.com/labnol) or email amit@labnol.org
+通過[推特](https://twitter.com/labnol)或電子郵件amit@labnol.org與他聯繫
 
 ### License
 
