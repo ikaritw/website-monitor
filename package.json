@@ -3,17 +3,24 @@
   "version": "1.1.0",
   "description": "Website Uptime Monitor",
   "author": {
-    "name": "Amit Agarwal",
-    "email": "amit@labnol.org",
+    "name": "jazz.lin",
+    "email": "jazz.lin@gigabyte.com",
     "url": "https://digitalinspiration.com"
   },
   "homepage": "https://digitalinspiration.com/",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
+    "login": "clasp login",
+    "init": "del .clasp.json && clasp create --type sheets --title \"WebsiteMonitor\" --rootDir ./dist ",
     "build": "webpack",
     "upload": "clasp push",
     "deploy": "npm run build && npm run upload"
+  },
+  "urls": {
+    "website-monitor-script":"https://ctrlq.org/code/19319-website-monitor-script",
+    "GoogleSheet": "https://drive.google.com/open?id=1RlIaM337BKjXdXwPVdfcgJRtQTn-yyp87mhPK9QmpT0",
+    "GoogleSheetsAdd-onScript": "https://script.google.com/d/1Avbd79-EQOYwzEu0G9uQhKHRnRE7EGyQZf97Vq7Ncf4WlZTElPYPCJNm/edit"
   },
   "repository": {
     "type": "git",
@@ -33,14 +40,14 @@
     "@babel/plugin-transform-object-assign": "^7.2.0",
     "@babel/plugin-transform-property-literals": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
-    "@google/clasp": "^2.0.1",
+    "@google/clasp": "^2.3.0",
     "@types/google-apps-script": "^0.0.37",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-array-includes": "^2.0.3",
     "clean-webpack-plugin": "^1.0.1",
-    "copy-webpack-plugin": "^4.6.0",
+    "copy-webpack-plugin": "^5.1.1",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.0.0",

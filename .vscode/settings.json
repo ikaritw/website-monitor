@@ -6,5 +6,8 @@
   "files.autoSave": "onFocusChange",
   "eslint.validate": [
     "javascript"
-  ]
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }

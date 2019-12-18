@@ -25,7 +25,9 @@ const getSiteStatus = (url = '') => {
         muteHttpExceptions: false
       })
     );
-    return response.getResponseCode();
+    const statusCode = response.getResponseCode();
+    Logger.log(`WEBSITE_MONITOR:${url}:${statusCode}`);
+    return statusCode;
   } catch (f) {
     logException(f);
     return SUCCESS - 1;

@@ -5,13 +5,14 @@ const GasPlugin = require('gas-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const destination = 'dist';
+const mode = 'none'; // production
 
 module.exports = {
-  mode: 'none',
+  mode,
   context: __dirname,
   entry: './src/index.js',
   output: {
-    filename: `labnol.js`,
+    filename: `app.js`,
     path: path.resolve(__dirname, destination),
     libraryTarget: 'this'
   },
